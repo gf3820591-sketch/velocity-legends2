@@ -100,3 +100,9 @@
         display: flex;
     }
 }
+
+@media(max-width:600px){
+    #form-contacto{
+        padding: 30px 22px;
+    }
+}

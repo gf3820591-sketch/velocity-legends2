@@ -336,7 +336,7 @@ header.scrolled{
     transition: .5s;
 }
 
-.gallery-overplay{
+.gallery-overlay{
     position: absolute;
     inset: 0;
     display: flex;
@@ -452,6 +452,16 @@ header.scrolled{
     display: flex;
     flex-direction: column;
     gap: 25px;
+    background: #101827;
+    padding: 45px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255,.08);
+    transition: .3s;
+}
+
+#form-contacto:hover{
+    border-color: #18C8FF;
+    box-shadow: 0 20px 45px rgba(24, 200, 255,.18);
 }
 
 .input-group{
@@ -463,6 +473,54 @@ header.scrolled{
     margin-bottom: 10px;
     font-weight: 600;
     color: white;
+}
+
+.input-group input,
+.input-group textarea{
+    width: 100%;
+    padding: 16px 20px;
+    background: #101827;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    color: white;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.input-group input:focus,
+.input-group textarea:focus{
+    outline: none;
+    border-color: #18C8FF;
+    box-shadow: 0 0 15px rgba(24, 200, 255,.35);
+}
+
+.input-group textarea{
+    resize: vertical;
+    min-height: 180px;
+}
+
+.input-group input::placeholder,
+.input-group textarea::placeholder{
+    color: #94a3b8;
+}
+
+#form-contacto button{
+    align-self: center;
+    padding: 16px 45px;
+    background: #18C8FF;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#form-contacto button:hover{
+    transform: translateY(-5px);
+    background: #0ea5e9;
+    box-shadow: 0 15px 30px rgba(24, 200, 255,.35);
 }
 
 .footer{
