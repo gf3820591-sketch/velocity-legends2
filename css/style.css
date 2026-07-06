@@ -190,7 +190,7 @@ header.scrolled{
 
 .section-title{
     text-align: center;
-    margin-bottom: 75px;
+    margin-bottom: 40px;
 }
 
 .section-title h2{
@@ -366,19 +366,24 @@ header.scrolled{
 }
 
 .tracks{
-    padding: 120px 8%;
+    padding: 70px 8%;
     background: #08101d;
+    scroll-margin-top: 70px;
 }
 
 .tracks-container{
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    gap: 20px;
+}
+
+.tracks .section-title{
+    margin-bottom: 35px;
 }
 
 .track-card{
     display:flex;
-    align-items:center;
+    align-items:stretch;
     gap:35px;
     background:#101827;
     border-radius:20px;
@@ -394,8 +399,8 @@ header.scrolled{
 }
 
 .track-card img{
-    width: 420px;
-    height: 260px;
+    width: 350px;
+    height: 300px;
     object-fit: cover;
     transition: .4s;
 }
@@ -405,12 +410,14 @@ header.scrolled{
 }
 
 .track-info{
-    padding-right: 40px;
+    padding: 40px 40px 40px 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .track-info h3{
     font-family: 'Orbitron', sans-serif;
-    font-size: 32px;
+    font-size: 28px;
     margin-bottom: 15px;
 }
 
@@ -434,6 +441,7 @@ header.scrolled{
     border-radius: 50px;
     color: #18C8FF;
     transition: .3s;
+    margin-top: auto;
 }
 
 .track-btn:hover{
